@@ -1,0 +1,18 @@
+[2025-12-26 21:37:47,869] INFO - Starting full ML pipeline
+[2025-12-26 21:37:47,869] INFO - Reading data from data/raw/adult.csv
+[2025-12-26 21:37:47,920] INFO - Data shape: (32561, 15)
+[2025-12-26 21:37:47,920] INFO - Starting preprocessing
+[2025-12-26 21:37:47,928] INFO - Train-test split done | X_train: (26048, 14), X_test: (6513, 14)
+[2025-12-26 21:37:47,948] INFO - Preprocessing completed successfully \u2705
+[2025-12-26 21:37:47,954] INFO - Scaler saved at: artifacts/scaler\scaler.joblib
+[2025-12-26 21:37:47,960] INFO - Feature columns saved at artifacts\columns.joblib
+[2025-12-26 21:37:49,650] INFO - Pipeline accuracy: 0.8089973898357132
+[2025-12-26 21:37:54,822] INFO - Pipeline logged to MLflow
+[2025-12-26 21:37:54,835] INFO - Model trained and saved at: artifacts\pipeline.joblib
+[2025-12-26 21:37:54,836] INFO - Starting model evaluation
+[2025-12-26 21:37:54,860] INFO - Accuracy: 0.8089973898357132
+[2025-12-26 21:37:54,860] INFO - Classification Report: {'0': {'precision': 0.9396100808368997, 'recall': 0.7996762444354513, 'f1-score': 0.8640139921294272, 'support': 4942.0}, '1': {'precision': 0.5708712613784135, 'recall': 0.838319541693189, 'f1-score': 0.6792160907684374, 'support': 1571.0}, 'accuracy': 0.8089973898357132, 'macro avg': {'precision': 0.7552406711076566, 'recall': 0.8189978930643201, 'f1-score': 0.7716150414489322, 'support': 6513.0}, 'weighted avg': {'precision': 0.8506666315248651, 'recall': 0.8089973898357132, 'f1-score': 0.819438911054943, 'support': 6513.0}}
+[2025-12-26 21:37:54,860] INFO - Confusion Matrix: [[3952, 990], [254, 1317]]
+[2025-12-26 21:37:54,862] INFO - Metrics saved at: artifacts\metrics.json
+[2025-12-26 21:37:54,864] INFO - Evaluation metrics saved at: artifacts\evaluation_metrics.yaml
+[2025-12-26 21:37:54,864] INFO - Pipeline completed successfully \u2705

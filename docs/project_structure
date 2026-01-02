@@ -1,0 +1,16 @@
+mlops_vikas_ml_flow/
+│
+├── src/
+│   ├── data_ingestion.py
+│   ├── preprocessing.py
+│   ├── train.py          # MLflow here
+│   ├── evaluate.py
+│   └── inference.py
+│
+├── app.py                # NEW (FastAPI)
+├── pipeline.py
+├── config.yaml
+├── artifacts/
+│   ├── model.pkl
+│   └── columns.pkl
+├── mlruns/

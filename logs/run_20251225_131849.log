@@ -1,0 +1,19 @@
+[2025-12-25 13:18:50,988] INFO - Starting full ML pipeline
+[2025-12-25 13:18:50,988] INFO - Reading data from data/raw/adult.csv
+[2025-12-25 13:18:51,052] INFO - Data shape: (32561, 15)
+[2025-12-25 13:18:51,052] INFO - Starting preprocessing
+[2025-12-25 13:18:51,070] INFO - Categorical columns detected: ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+[2025-12-25 13:18:51,078] INFO - Encoded feature column: workclass
+[2025-12-25 13:18:51,082] INFO - Encoded feature column: education
+[2025-12-25 13:18:51,086] INFO - Encoded feature column: marital-status
+[2025-12-25 13:18:51,091] INFO - Encoded feature column: occupation
+[2025-12-25 13:18:51,091] INFO - Encoded feature column: relationship
+[2025-12-25 13:18:51,091] INFO - Encoded feature column: race
+[2025-12-25 13:18:51,091] INFO - Encoded feature column: sex
+[2025-12-25 13:18:51,109] INFO - Encoded feature column: native-country
+[2025-12-25 13:18:51,109] INFO - Target column 'income' encoded
+[2025-12-25 13:18:51,123] INFO - Train-test split done | X_train: (26048, 14), X_test: (6513, 14)
+[2025-12-25 13:18:51,125] INFO - No missing values found \u2192 skipped imputation
+[2025-12-25 13:18:51,133] INFO - Feature scaling completed
+[2025-12-25 13:18:51,133] INFO - Preprocessing completed successfully \u2705
+[2025-12-25 13:18:51,133] INFO - Preprocessing completed

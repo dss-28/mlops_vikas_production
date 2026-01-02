@@ -1,0 +1,10 @@
+[2025-12-29 19:53:24,583] INFO - Starting full MLflow pipeline
+[2025-12-29 19:53:24,583] INFO - Reading data from data/raw/adult.csv
+[2025-12-29 19:53:24,666] INFO - Data shape: (32561, 15)
+[2025-12-29 19:53:24,712] INFO - Data split: X_train=(26048, 14), X_test=(6513, 14)
+[2025-12-29 19:53:24,712] INFO - Building pipeline
+[2025-12-29 19:53:24,712] INFO - Training pipeline
+[2025-12-29 19:53:24,949] INFO - Predicting on test set
+[2025-12-29 19:53:24,973] INFO - Pipeline accuracy: 0.8560
+[2025-12-29 19:53:24,973] INFO - Saving pipeline to artifacts\pipeline.joblib
+[2025-12-29 19:53:24,976] INFO - Loading MLflow model: models:/AdultIncomeModel/1

@@ -1,0 +1,19 @@
+[2025-12-24 00:27:10,003] INFO - Reading data from data/raw/adult.csv
+[2025-12-24 00:27:10,065] INFO - Data shape: (32561, 15)
+[2025-12-24 00:27:10,065] INFO - Starting preprocessing
+[2025-12-24 00:27:10,069] INFO - Categorical columns: ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+[2025-12-24 00:27:10,074] INFO - Encoded column: workclass
+[2025-12-24 00:27:10,079] INFO - Encoded column: education
+[2025-12-24 00:27:10,082] INFO - Encoded column: marital-status
+[2025-12-24 00:27:10,082] INFO - Encoded column: occupation
+[2025-12-24 00:27:10,108] INFO - Encoded column: relationship
+[2025-12-24 00:27:10,112] INFO - Encoded column: race
+[2025-12-24 00:27:10,116] INFO - Encoded column: sex
+[2025-12-24 00:27:10,121] INFO - Encoded column: native-country
+[2025-12-24 00:27:10,127] INFO - Target column 'income' encoded
+[2025-12-24 00:27:10,136] INFO - Train/test split done: X_train (26048, 14), X_test (6513, 14)
+[2025-12-24 00:27:10,139] INFO - No missing values detected, skipping imputation
+[2025-12-24 00:27:10,148] INFO - Feature scaling applied
+[2025-12-24 00:27:10,148] INFO - Preprocessing completed successfully \u2705
+[2025-12-24 00:27:10,148] INFO - X_train shape: (26048, 14), X_test shape: (6513, 14)
+[2025-12-24 00:27:10,148] INFO - Preprocessing logging test completed \u2705

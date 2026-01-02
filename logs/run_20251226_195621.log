@@ -1,0 +1,14 @@
+[2025-12-26 19:56:21,110] INFO - Starting inference
+[2025-12-26 19:56:21,180] INFO - New data loaded from data/raw/adult.csv, shape: (32561, 15)
+[2025-12-26 19:56:21,193] INFO - Scaler loaded from artifacts/scaler\scaler.joblib
+[2025-12-26 19:56:21,209] INFO - Encoded categorical column: workclass
+[2025-12-26 19:56:21,211] INFO - Encoded categorical column: education
+[2025-12-26 19:56:21,213] INFO - Encoded categorical column: marital-status
+[2025-12-26 19:56:21,213] INFO - Encoded categorical column: occupation
+[2025-12-26 19:56:21,213] INFO - Encoded categorical column: relationship
+[2025-12-26 19:56:21,213] INFO - Encoded categorical column: race
+[2025-12-26 19:56:21,221] INFO - Encoded categorical column: sex
+[2025-12-26 19:56:21,223] INFO - Encoded categorical column: native-country
+[2025-12-26 19:56:21,229] INFO - Features scaled
+[2025-12-26 19:56:21,334] INFO - Model loaded from artifacts\model.joblib
+[2025-12-26 19:56:21,334] INFO - Inference completed, predictions: [1 0 0 0 1 1 0 0 1 1]... (first 10)

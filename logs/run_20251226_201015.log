@@ -1,0 +1,32 @@
+[2025-12-26 20:10:18,232] INFO - Starting full ML pipeline
+[2025-12-26 20:10:18,232] INFO - Reading data from data/raw/adult.csv
+[2025-12-26 20:10:18,284] INFO - Data shape: (32561, 15)
+[2025-12-26 20:10:18,284] INFO - Starting preprocessing
+[2025-12-26 20:10:18,288] INFO - Categorical columns detected: ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+[2025-12-26 20:10:18,294] INFO - Encoded feature column: workclass
+[2025-12-26 20:10:18,298] INFO - Encoded feature column: education
+[2025-12-26 20:10:18,304] INFO - Encoded feature column: marital-status
+[2025-12-26 20:10:18,318] INFO - Encoded feature column: occupation
+[2025-12-26 20:10:18,318] INFO - Encoded feature column: relationship
+[2025-12-26 20:10:18,331] INFO - Encoded feature column: race
+[2025-12-26 20:10:18,331] INFO - Encoded feature column: sex
+[2025-12-26 20:10:18,331] INFO - Encoded feature column: native-country
+[2025-12-26 20:10:18,331] INFO - Target column 'income' encoded
+[2025-12-26 20:10:18,347] INFO - Train-test split done | X_train: (26048, 14), X_test: (6513, 14)
+[2025-12-26 20:10:18,354] INFO - No missing values found \u2192 skipped imputation
+[2025-12-26 20:10:18,363] INFO - Feature scaling completed
+[2025-12-26 20:10:18,363] INFO - Preprocessing completed successfully \u2705
+[2025-12-26 20:10:18,364] INFO - Preprocessing completed
+[2025-12-26 20:10:18,364] INFO - Scaler saved at: artifacts/scaler\scaler.joblib
+[2025-12-26 20:10:21,643] INFO - Training model started
+[2025-12-26 20:10:21,700] INFO - Model accuracy: 0.7678489175495163
+[2025-12-26 20:10:21,709] INFO - Model saved at artifacts\model.joblib
+[2025-12-26 20:10:31,421] INFO - Model logged to MLflow
+[2025-12-26 20:10:31,425] INFO - Model trained and saved at: artifacts\model.joblib
+[2025-12-26 20:10:31,425] INFO - Starting model evaluation
+[2025-12-26 20:10:31,441] INFO - Accuracy: 0.7678489175495163
+[2025-12-26 20:10:31,441] INFO - Classification Report: {'0': {'precision': 0.9126564003849855, 'recall': 0.7675030352084177, 'f1-score': 0.833809628489778, 'support': 4942.0}, '1': {'precision': 0.5125159100551548, 'recall': 0.7689369828134945, 'f1-score': 0.615071283095723, 'support': 1571.0}, 'accuracy': 0.7678489175495163, 'macro avg': {'precision': 0.7125861552200702, 'recall': 0.7682200090109561, 'f1-score': 0.7244404557927505, 'support': 6513.0}, 'weighted avg': {'precision': 0.8161385575616839, 'recall': 0.7678489175495163, 'f1-score': 0.7810477767142429, 'support': 6513.0}}
+[2025-12-26 20:10:31,441] INFO - Confusion Matrix: [[3793, 1149], [363, 1208]]
+[2025-12-26 20:10:31,443] INFO - Metrics saved at: artifacts\metrics.json
+[2025-12-26 20:10:31,446] INFO - Evaluation metrics saved at: artifacts\evaluation_metrics.yaml
+[2025-12-26 20:10:31,446] INFO - Pipeline completed successfully \u2705

@@ -1,0 +1,16 @@
+[2026-01-03 00:31:09,055] INFO - Starting full MLflow + pipeline workflow
+[2026-01-03 00:31:11,509] INFO - Reading data from data/raw/adult.csv
+[2026-01-03 00:31:11,629] INFO - Data shape: (32561, 15)
+[2026-01-03 00:31:11,693] INFO - Data split: X_train=(26048, 14), X_test=(6513, 14)
+[2026-01-03 00:31:11,693] INFO - Building pipeline
+[2026-01-03 00:31:11,778] INFO - Training pipeline
+[2026-01-03 00:31:12,132] INFO - Predicting on test set
+[2026-01-03 00:31:12,166] INFO - Test Accuracy: 0.8124
+[2026-01-03 00:31:12,170] INFO - Pipeline saved locally at artifacts\pipeline.joblib
+[2026-01-03 00:31:36,612] INFO - Pipeline logged and registered in MLflow as 'AdultIncomeModel'
+[2026-01-03 00:31:36,644] INFO - Model version 8 promoted to Production
+[2026-01-03 00:31:36,664] INFO - Loading Production model from MLflow Registry
+[2026-01-03 00:31:36,710] INFO - Running predictions
+[2026-01-03 00:31:36,727] INFO - Predictions (first 10): ['<=50K' '<=50K' '>50K' '>50K' '<=50K' '<=50K' '<=50K' '>50K' '>50K'
+ '<=50K']
+[2026-01-03 00:31:36,727] INFO - Sample predictions: ['<=50K', '<=50K', '>50K', '>50K', '<=50K', '<=50K', '<=50K', '>50K', '>50K', '<=50K']

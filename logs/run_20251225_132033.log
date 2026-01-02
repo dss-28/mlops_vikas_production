@@ -1,0 +1,20 @@
+[2025-12-25 13:20:34,620] INFO - Starting full ML pipeline
+[2025-12-25 13:20:34,620] INFO - Reading data from data/raw/adult.csv
+[2025-12-25 13:20:34,661] INFO - Data shape: (32561, 15)
+[2025-12-25 13:20:34,661] INFO - Starting preprocessing
+[2025-12-25 13:20:34,661] INFO - Categorical columns detected: ['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']
+[2025-12-25 13:20:34,661] INFO - Encoded feature column: workclass
+[2025-12-25 13:20:34,680] INFO - Encoded feature column: education
+[2025-12-25 13:20:34,680] INFO - Encoded feature column: marital-status
+[2025-12-25 13:20:34,690] INFO - Encoded feature column: occupation
+[2025-12-25 13:20:34,693] INFO - Encoded feature column: relationship
+[2025-12-25 13:20:34,698] INFO - Encoded feature column: race
+[2025-12-25 13:20:34,702] INFO - Encoded feature column: sex
+[2025-12-25 13:20:34,706] INFO - Encoded feature column: native-country
+[2025-12-25 13:20:34,707] INFO - Target column 'income' encoded
+[2025-12-25 13:20:34,707] INFO - Train-test split done | X_train: (26048, 14), X_test: (6513, 14)
+[2025-12-25 13:20:34,707] INFO - No missing values found \u2192 skipped imputation
+[2025-12-25 13:20:34,724] INFO - Feature scaling completed
+[2025-12-25 13:20:34,724] INFO - Preprocessing completed successfully \u2705
+[2025-12-25 13:20:34,724] INFO - Preprocessing completed
+[2025-12-25 13:20:34,724] INFO - Scaler saved at: artifacts/scaler\scaler.joblib
