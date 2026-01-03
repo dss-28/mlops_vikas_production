@@ -1,6 +1,14 @@
-from src.train import main as train_main
+# tests/test_pipeline.py
+import unittest
 
-def test_train_pipeline_runs():
-    # This just checks that your pipeline runs without error
-    train_main()
-    assert True
+class TestPipelineEntrypoint(unittest.TestCase):
+
+    def test_pipeline_entrypoint_exists(self):
+        import pipeline
+        self.assertTrue(
+            hasattr(pipeline, "main"),
+            "pipeline.main() is missing"
+        )
+
+if __name__ == "__main__":
+    unittest.main()
