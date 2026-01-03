@@ -1,0 +1,55 @@
+# .github/workflows/ci_cd.yml
+name: ML Pipeline CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2️⃣ Set up Python
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # 3️⃣ Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install mlflow scikit-learn joblib pandas
+
+      # 4️⃣ Run unit tests
+      - name: Run tests
+        run: |
+          if [ -d "tests" ]; then
+            python -m unittest discover -s tests
+          else
+            echo "No tests folder found, skipping tests."
+          fi
+
+      # 5️⃣ Build Docker image
+      - name: Build Docker image
+        run: docker build -t ml-fastapi-app .
+
+      # 6️⃣ Login to Docker Hub
+      - name: Docker login
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # 7️⃣ Tag & Push Docker image
+      - name: Push Docker image to Docker Hub
+        run: |
+          docker tag ml-fastapi-app yourdockerhubuser/ml-fastapi-app:latest
+          docker push yourdockerhubuser/ml-fastapi-app:latest
