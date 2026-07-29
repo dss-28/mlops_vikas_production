@@ -1,4 +1,3 @@
-Here is a cleaner, GitHub-ready README that positions it as a **production ML system** (better for HDFC/DS/ML Engineer reviewers):
 
 ```markdown
 # 🚀 End-to-End MLOps Pipeline for Income Classification
