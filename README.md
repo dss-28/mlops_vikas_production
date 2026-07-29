@@ -114,7 +114,7 @@ Git, GitHub, YAML
 ## 📂 Project Structure
 
 ```text
-mlops_vikas_production
+income-classification-production-pipeline
 │
 ├── .github
 │   └── workflows
