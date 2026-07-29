@@ -113,7 +113,6 @@ Git, GitHub, YAML
 
 ## 📂 Project Structure
 
-```text
 mlops_vikas_production
 │
 ├── .github
@@ -132,7 +131,6 @@ mlops_vikas_production
 │   ├── model.joblib
 │   ├── pipeline.joblib
 │   ├── scaler
-│   │   └── scaler.joblib
 │   ├── columns.joblib
 │   ├── metrics.json
 │   └── evaluation_metrics.yaml
@@ -152,7 +150,6 @@ mlops_vikas_production
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-
 
 ## 🚀 How to Run
 
