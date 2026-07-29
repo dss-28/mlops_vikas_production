@@ -113,40 +113,45 @@ Git, GitHub, YAML
 
 ## 📂 Project Structure
 
-mlops_vikas_production/
-
-├── .github/
-│   └── workflows/
+```text
+mlops_vikas_production
+│
+├── .github
+│   └── workflows
 │       └── ci_cd.yml
-
-├── src/
+│
+├── src
 │   ├── data_ingestion.py
 │   ├── preprocessing.py
 │   ├── train.py
 │   ├── evaluate.py
 │   ├── inference.py
 │   └── logger.py
-
-├── artifacts/
+│
+├── artifacts
 │   ├── model.joblib
 │   ├── pipeline.joblib
-│   ├── scaler/
+│   ├── scaler
+│   │   └── scaler.joblib
+│   ├── columns.joblib
 │   ├── metrics.json
 │   └── evaluation_metrics.yaml
-
-├── tests/
+│
+├── data
+│   └── raw
+│       └── adult.csv
+│
+├── tests
 │   ├── test_pipeline.py
-│   └── test_training.py
-
+│   ├── test_training.py
+│   └── test_preprocess.py
+│
 ├── app.py
 ├── pipeline.py
 ├── config.yaml
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-
----
-
 ## 🚀 How to Run
 
 Install dependencies:
