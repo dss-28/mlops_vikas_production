@@ -113,6 +113,7 @@ Git, GitHub, YAML
 
 ## 📂 Project Structure
 
+```text
 mlops_vikas_production
 │
 ├── .github
@@ -150,7 +151,7 @@ mlops_vikas_production
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
-
+```
 ## 🚀 How to Run
 
 Install dependencies:
